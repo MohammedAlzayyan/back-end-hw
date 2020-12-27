@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Back-End Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="container">
+    <br />
+    <br />
+    <div>
+      <h1 class="nameAssignmet">Back-End Assignment</h1>
+
+      <div class="req">
+        <div class="post-body">
+          <div class="form-group">
+            <label for="post">Send POST request</label>
+            <input
+              id="post"
+              type="text"
+              name="json_data"
+              placeholder="Enter some JSON data"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+
+      <br />
+      <div class="req">
+        <div class="get-body">
+          <div class="form-group">
+            <label for="get">Send GET request</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter your name"
+            />
+          </div>
+          <button id="send-GET" type="submit" class="btn btn-primary">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById('send-GET').onclick = () => {
+      let name = document.getElementById('username').value
+
+      if (name.length == 0) {
+        alert('Please enter a name to send a GET request!')
+        return
+      }
+
+      window.location = `${window.location}greeting/${name}`
+    }
+  </script>
+</html>
