@@ -1,0 +1,40 @@
+.container {
+  background-color: rgb(167, 153, 148);
+}
+
+.nameAssignmet {
+  text-align: center;
+  color: orangered;
+}
+
+.req {
+  background-color: rgb(248, 189, 168);
+  width: 500px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  line-height: 50px;
+  border: 3px solid rgb(184, 86, 6);
+  margin: auto;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+label {
+  color: rgb(180, 62, 6);
+  font-size: 20px;
+}
+input {
+  font-size: 18px;
+  background-color: rgb(248, 224, 209);
+}
+
+button {
+  font-size: 22px;
+  color: white;
+  background-color: rgb(139, 60, 6);
+}
